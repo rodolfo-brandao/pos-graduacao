@@ -10,4 +10,4 @@
     Universidade Tiradentes – UNIT
 </h3>
 
-Este repositório visa armazenar todo os projetos realizados em cada módulo da especialização, conduzidos ao longo da minha jornada acadêmica (2025–2027).
+Este repositório visa armazenar todos os projetos realizados em cada módulo da especialização, conduzidos ao longo da minha jornada acadêmica (2025–2027).
