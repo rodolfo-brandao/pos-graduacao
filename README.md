@@ -1,2 +1,13 @@
-# academic
-All material and projects from my Graduate Specialization Program in Data Science (2025–2027)
+<h1 align="center">
+    Ciência de Dados & Inteligência Artificial
+</h1>
+
+<h2 align="center">
+    Pós-graduação Lato Sensu
+</h2>
+
+<h3 align="center">
+    Universidade Tiradentes – UNIT
+</h3>
+
+Este repositório visa armazenar todo os projetos realizados em cada módulo da especialização, conduzidos ao longo da minha jornada acadêmica (2025–2027).
