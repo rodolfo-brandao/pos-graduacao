@@ -1,0 +1,1 @@
+Devido ao grande tamanho do arquivo, o dataset de [microdados do ENEM](https://www.gov.br/inep/pt-br/acesso-a-informacao/dados-abertos/microdados/enem) utilizado nas análises deste módulo pode ser acessado [aqui](https://drive.google.com/file/d/1g3pwpE1oSFu7NqejAmkkbTOwCMW4So5O/view?usp=sharing).
