@@ -33,7 +33,7 @@ microdados_enem_2023_ne <- read_csv2(
 
 
 
-# (opcional) Listar colunas do dataset (opcional):
+# (opcional) Listar colunas do dataset:
 colnames(microdados_enem_2023_ne)
 
 
