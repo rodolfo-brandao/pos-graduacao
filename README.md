@@ -7,7 +7,7 @@
 </h2>
 
 <h3 align="center">
-    Universidade Tiradentes – UNIT
+    Universidade Tiradentes – Unit
 </h3>
 
 Este repositório visa armazenar todos os projetos realizados em cada módulo da especialização, conduzidos ao longo da minha jornada acadêmica (2025–2027).
