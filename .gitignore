@@ -1,1 +1,5 @@
+# macOS files
 .DS_Store
+
+# Large CSV files
+*microdados-enem-2023-nordeste.csv
