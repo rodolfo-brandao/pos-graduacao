@@ -1,1 +1,1 @@
-# Estatística – Análise Descritiva, Probabilidade e Inferência com Python e R
+# Linguagens Python e R com Foco em Análise de Dados II
