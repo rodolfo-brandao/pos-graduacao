@@ -1,1 +1,1 @@
-# Álgebra Linear para Ciência de Dados I
+# Álgebra Linear para Ciência de Dados
