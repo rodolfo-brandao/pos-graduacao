@@ -1,5 +1,5 @@
 <h1 align="center">
-    Ciência de Dados & Inteligência Artificial
+    Ciência de Dados e Inteligência Artificial
 </h1>
 
 <h2 align="center">
@@ -9,5 +9,3 @@
 <h3 align="center">
     Universidade Tiradentes – Unit
 </h3>
-
-Este repositório visa armazenar todos os projetos realizados em cada módulo da especialização, conduzidos ao longo da minha jornada acadêmica (2025–2027).
