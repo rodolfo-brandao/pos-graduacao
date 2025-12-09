@@ -21,10 +21,22 @@ WHERE a.COD_CURSO IN (44, 13) AND a.MGP > 7
 ORDER BY a.COD_CURSO, a.NOM_ALU;
 
 
--- 3)Listar todos alunos que possuem o nome “Maria” na
+-- 3) Listar todos alunos que possuem o nome “Maria” na
 -- formação de seu nome exibindo matrícula e nome, ordenados pelo nome.
 SELECT
     a.MAT_ALU,
     a.NOM_ALU
 FROM ACADEMICO.ALUNOS a
 WHERE UPPER(a.NOM_ALU) LIKE '%MARIA%';
+
+
+-- 4) Obter a quantidade de alunos cadastrados por curso, exibindo
+-- código do curso e quantidade de alunos ordenados pelo código do curso.
+SELECT
+    c.COD_CURSO,
+    COUNT(*) AS "TOTAL_ALUNOS"
+FROM ACADEMICO.ALUNOS a
+JOIN ACADEMICO.CURSOS c
+    ON a.COD_CURSO = c.COD_CURSO
+GROUP BY c.COD_CURSO
+ORDER BY c.COD_CURSO;
