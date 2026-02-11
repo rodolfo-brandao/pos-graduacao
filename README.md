@@ -20,4 +20,5 @@
   <li><a href="src/modulos/modulo-05">Estatística - Análise Descritiva, Probabilidade e Inferência com Python e R II</a></li>
   <li><a href="src/modulos/modulo-06">Álgebra Linear para Ciência de Dados</a></li>
   <li><a href="src/modulos/modulo-07">Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados</a></li>
+  <li><a href="src/modulos/modulo-08">Pré-processamento de Dados</a></li>
 </ol>
