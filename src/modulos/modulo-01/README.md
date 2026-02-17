@@ -1,1 +1,0 @@
-# Introdução, Definições e Exemplos – Ciência de Dados e Inteligência Artificial

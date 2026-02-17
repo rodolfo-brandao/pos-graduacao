@@ -1,1 +1,0 @@
-# Estatística – Análise Descritiva, Probabilidade e Inferência com Python e R II

@@ -1,1 +1,0 @@
-# Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados
