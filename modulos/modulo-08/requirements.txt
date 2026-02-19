@@ -19,6 +19,7 @@ jsonschema-specifications==2025.9.1
 kiwisolver==1.4.7
 MarkupSafe==3.0.3
 matplotlib==3.9.4
+mysql-connector-python==9.4.0
 narwhals==2.16.0
 numpy==2.0.2
 packaging==25.0
@@ -29,6 +30,7 @@ pyarrow==21.0.0
 pydeck==0.9.1
 pyparsing==3.3.2
 python-dateutil==2.9.0.post0
+python-dotenv==1.2.1
 pytz==2025.2
 referencing==0.36.2
 requests==2.32.5
