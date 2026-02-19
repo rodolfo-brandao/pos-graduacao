@@ -671,7 +671,7 @@ def scrape_search(
 if __name__ == "__main__":
     search_term = ""
     scrape_search(
-        search_url=f"https://www.magazineluiza.com.br/busca/{search_term}/",
+        search_url=f"{BASE_URL}/busca/{search_term}/",
         max_pages=2,
         max_products_total=100,
         out_dir="",
