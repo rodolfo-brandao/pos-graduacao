@@ -2,13 +2,15 @@
 This is the Streamlit Dashboard entrypoint.
 
 
-Initial setup (on "modulos/modulo-08/"):
+Initial setup:
 1. Create a virtual environment:    $ python3 -m venv .venv
 2. Activate it:                     $ source .venv/bin/activate
 3. Install requirements:            $ pip install -r requirements.txt
-4. Freeze requirements:             $ pip freeze > requirements.txt
+4. Freeze requirements:             $ pip freeze > requirements.txt     (optional)
 
-To run this app:
+
+Run this app:
+$ cd modulos/modulo-08/
 $ streamlit run dashboard.py
 """
 
