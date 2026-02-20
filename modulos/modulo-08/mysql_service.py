@@ -270,5 +270,4 @@ class MySqlService:
         rows = cursor.fetchall()
 
         items = [{ "date": str(row.get("data_coleta", ""))[:10], "avg_price": round(row.get("preco_medio", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
-        print(items)
         return items
