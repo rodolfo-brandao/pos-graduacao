@@ -150,7 +150,7 @@ with row4_col2:
 
 
 # ----- Section 05 -----
-st.subheader("🏆 TOP 5 PRODUTOS MAIS CAROS")
+st.subheader("🤑 TOP 5 PRODUTOS MAIS CAROS")
 row5_col1, row5_col2 = st.columns(2, gap="large")
 
 with row5_col1:
@@ -183,39 +183,58 @@ with row5_col2:
 
 
 # ----- Section 06 -----
-st.subheader("📉 VARIAÇÃO DE PREÇO MÉDIO POR CATEGORIA")
+st.subheader("📈 VARIAÇÃO DE PREÇO MÉDIO POR CATEGORIA")
+selectbox_options = ["Caixa de Som", "Celular", "Fone", "Notebook", "Smartwatch", "Tablet", "Teclado", "TV"]
+selected_category = st.sidebar.selectbox("CATEGORIAS", selectbox_options, index=0)
 row6_col1, row6_col2 = st.columns(2, gap="medium")
+
 
 with row6_col1:
     st.markdown("#### MAGAZINE LUIZA")
-    st.markdown("##### CATEGORIA: TV 📺")
-    magalu_tv_price_variance = mysql_service.get_category_price_variance_over_time(
+    st.markdown(f"##### CATEGORIA: {selected_category}")
+
+    magalu_price_variance = mysql_service.get_category_price_variance_over_time(
         marketplace="magalu",
-        category="tv"
+        category=selected_category.lower()
     )
-    magalu_tv_price_variance_fig = chart_factory.create_time_series_chart(
-        xlabel="date",
-        ylabel="avg_price",
-        display_xlabel="DATA DA COLETA",
-        display_ylabel="PREÇO MÉDIO",
-        chart_title="",
-        source=magalu_tv_price_variance
-    )
-    st.pyplot(magalu_tv_price_variance_fig, width="stretch")
+
+    if magalu_price_variance:
+        magalu_price_variance_fig = chart_factory.create_time_series_chart(
+            xlabel="date",
+            ylabel="avg_price",
+            display_xlabel="DATA DA COLETA",
+            display_ylabel="PREÇO MÉDIO",
+            chart_title="",
+            source=magalu_price_variance
+        )
+        st.pyplot(magalu_price_variance_fig, width="stretch")
+    else:
+        st.markdown(
+            "<h4 style='text-align: center;'>🤷‍♂️ Categoria inexistente</h4>",
+            unsafe_allow_html=True
+        )
 
 with row6_col2:
     st.markdown("#### MERCADO LIVRE")
-    st.markdown("##### CATEGORIA: TV 📺")
-    magalu_tv_price_variance = mysql_service.get_category_price_variance_over_time(
+    st.markdown(f"##### CATEGORIA: {selected_category}")
+
+    ml_price_variance = mysql_service.get_category_price_variance_over_time(
         marketplace="mercado_livre",
-        category="tv"
+        category=selected_category.lower()
     )
-    magalu_tv_price_variance_fig = chart_factory.create_time_series_chart(
-        xlabel="date",
-        ylabel="avg_price",
-        display_xlabel="DATA DA COLETA",
-        display_ylabel="PREÇO MÉDIO",
-        chart_title="",
-        source=magalu_tv_price_variance
-    )
-    st.pyplot(magalu_tv_price_variance_fig, width="stretch")
+
+    if ml_price_variance:
+        ml_price_variance_fig = chart_factory.create_time_series_chart(
+            xlabel="date",
+            ylabel="avg_price",
+            display_xlabel="DATA DA COLETA",
+            display_ylabel="PREÇO MÉDIO",
+            chart_title="",
+            source=ml_price_variance
+        )
+        st.pyplot(ml_price_variance_fig, width="stretch")
+    else:
+        st.markdown(
+            "<h4 style='text-align: center;'>🤷‍♂️ Categoria inexistente</h4>",
+            unsafe_allow_html=True
+        )
