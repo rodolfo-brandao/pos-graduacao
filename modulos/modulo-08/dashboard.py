@@ -1,4 +1,11 @@
-"""This is the Streamlit Dashboard entrypoint."""
+"""
+This is the Streamlit Dashboard entrypoint.
+
+
+To run this app (on root folder):
+- Activate the virtual environment (.venv)
+- Run: $ streamlit modulos/modulo-08/dashboard.py
+"""
 
 
 import streamlit as st
@@ -79,6 +86,7 @@ with row2_col2:
 
 st.divider()
 
+
 # ----- Section 03 -----
 st.subheader("📦 DISTRIBUIÇÃO POR CATEGORIA")
 row3_col1, row3_col2, row3_col3 = st.columns(3, gap="medium")
@@ -123,6 +131,7 @@ with row3_col3:
 
 st.divider()
 
+
 # ----- Section 04 -----
 st.subheader("🏆 TOP 3 PRODUTOS MAIS BEM AVALIADOS")
 row4_col1, row4_col2 = st.columns(2, gap="large")
@@ -158,6 +167,7 @@ with row4_col2:
 
 st.divider()
 
+
 # ----- Section 05 -----
 st.subheader("🤑 TOP 5 PRODUTOS MAIS CAROS")
 row5_col1, row5_col2 = st.columns(2, gap="large")
@@ -192,6 +202,7 @@ with row5_col2:
 
 
 st.divider()
+
 
 # ----- Section 06 -----
 st.subheader("📈 VARIAÇÃO DE PREÇO MÉDIO POR CATEGORIA")
