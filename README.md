@@ -1,24 +1,54 @@
-<h1 align="center">
-    Ciência de Dados e Inteligência Artificial
-</h1>
+# Pós-graduação Lato Sensu em Ciência de Dados e Inteligência Artificial
 
-<h2 align="center">
-    Pós-graduação Lato Sensu
-</h2>
+![Python version](https://img.shields.io/badge/python-3.9.6-blue)
+![Last GitHub commit](https://img.shields.io/github/last-commit/rodolfo-brandao/pos-graduacao
+)
 
-<h3 align="center">
-    Universidade Tiradentes – Unit
-</h3>
+## Módulos
 
-<h4>Módulos</h4>
+1. [Introdução, Definições e Exemplos](modulos/modulo-01) (2025)
+2. [Linguagens Python e R com Foco em Análise de Dados I](modulos/modulo-02) (2025)
+3. [Linguagens Python e R com Foco em Análise de Dados II](modulos/modulo-03) (2025)
+4. [Estatística - Análise Descritiva, Probabilidade e Inferência com Python e R I](modulos/modulo-04) (2025)
+5. [Estatística - Análise Descritiva, Probabilidade e Inferência com Python e R II](modulos/modulo-05) (2025)
+6. [Álgebra Linear para Ciência de Dados](modulos/modulo-06) (2025)
+7. [Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados](modulos/modulo-07) (2025)
+8. [Pré-processamento de Dados](modulos/modulo-08) (2026)
 
-<ol>
-  <li><a href="modulos/modulo-01">Introdução, Definições e Exemplos</a> (2025)</li>
-  <li><a href="modulos/modulo-02">Linguagens Python e R com Foco em Análise de Dados I</a> (2025)</li>
-  <li><a href="modulos/modulo-03">Linguagens Python e R com Foco em Análise de Dados II</a> (2025)</li>
-  <li><a href="modulos/modulo-04">Estatística - Análise Descritiva, Probabilidade e Inferência com Python e R I</a> (2025)</li>
-  <li><a href="modulos/modulo-05">Estatística - Análise Descritiva, Probabilidade e Inferência com Python e R II</a> (2025)</li>
-  <li><a href="modulos/modulo-06">Álgebra Linear para Ciência de Dados</a> (2025)</li>
-  <li><a href="modulos/modulo-07">Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados</a> (2025)</li>
-  <li><a href="modulos/modulo-08">Pré-processamento de Dados</a> (2026)</li>
-</ol>
+## Ambiente Virtual Python
+
+Para executar os códigos Python deste repositório, é necessário (e recomendado) criar e utilizar um ambiente virtual. Dessa forma, é possível centralizar todas as dependências em um único lugar, além de evitar conflito entre elas.
+
+### Setup inicial
+
+1. Clonar o repositório:
+```bash
+git clone https://github.com/rodolfo-brandao/pos-graduacao.git
+```
+
+2. Navegar até sua pasta:
+```bash
+cd pos-graduacao
+```
+
+### Ambiente virtual
+
+1. Criar ambiente:
+```bash
+python3 -m venv .venv
+```
+
+2. Ativar ambiente:
+```bash
+source .venv/bin/activate
+```
+
+3. Instalar as dependências:
+```bash
+pip install -r requirements.txt
+```
+
+4. Atualizar novas dependências (opcional):
+```bash
+pip freeze > requirements.txt
+```
