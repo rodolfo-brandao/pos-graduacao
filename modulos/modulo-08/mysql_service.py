@@ -186,7 +186,7 @@ class MySqlService:
         cursor.execute(query, params)
         rows = cursor.fetchall()
 
-        items = [{ "product": row.get("nome_canonico", "")[:20], "rating": round(row.get("media_avaliacao", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
+        items = [{ "product": row.get("nome_canonico", "")[:35], "rating": round(row.get("media_avaliacao", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
         return items
 
 

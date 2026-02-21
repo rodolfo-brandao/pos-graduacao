@@ -142,11 +142,10 @@ with row4_col1:
     top3_magalu_fig = chart_factory.create_bar_chart(
         xlabel="rating",
         ylabel="product",
-        display_xlabel="Produto",
-        display_ylabel="Avaliação",
+        display_xlabel="Avaliação",
+        display_ylabel="Produto",
         chart_title="",
         source=top3_magalu,
-        horizontal_bars=False
     )
     st.pyplot(top3_magalu_fig, width="stretch")
 
@@ -156,11 +155,10 @@ with row4_col2:
     top3_ml_fig = chart_factory.create_bar_chart(
         xlabel="rating",
         ylabel="product",
-        display_xlabel="Produto",
-        display_ylabel="Avaliação",
+        display_xlabel="Avaliação",
+        display_ylabel="Produto",
         chart_title="",
-        source=top3_ml,
-        horizontal_bars=False
+        source=top3_ml
     )
     st.pyplot(top3_ml_fig, width="stretch")
 
