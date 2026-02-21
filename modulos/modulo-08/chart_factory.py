@@ -24,6 +24,8 @@ class ChartFactory:
         display_ylabel: str,
         chart_title: str,
         source: List[Dict],
+        xlabel_size: int=6,
+        ylabel_size: int=6,
         horizontal_bars: bool=True) -> Figure:
         """
         Creates a `BAR` chart from the given data source,
@@ -44,8 +46,8 @@ class ChartFactory:
         ax.set_ylabel(display_ylabel)
         ax.set_title(chart_title)
 
-        ax.tick_params(axis="x", labelsize=6)
-        ax.tick_params(axis="y", labelsize=6)
+        ax.tick_params(axis="x", labelsize=xlabel_size)
+        ax.tick_params(axis="y", labelsize=ylabel_size)
 
         fig.tight_layout()
         return fig

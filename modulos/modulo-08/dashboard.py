@@ -196,6 +196,7 @@ with row5_col2:
         display_ylabel="Preço",
         chart_title="",
         source=top5_ml,
+        xlabel_size=5,
         horizontal_bars=False
     )
     st.pyplot(top5_ml_fig, width="stretch")
