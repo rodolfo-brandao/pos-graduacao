@@ -30,15 +30,12 @@ class MySqlService:
         )
 
 
-    def get_total_products_by_marketplace(self, marketplace: str) -> int:
+    def get_total_products(self, marketplace: str) -> int:
         """
-        Selects the `COUNT(*)` value from the total of products from the given marketplace.
+        Selects the `COUNT` value from the total of products.
 
-        :param marketplace: The name of the respective marketplace.
+        :param marketplace: The name of the marketplace to be used as filter (e.g. "magalu", "mercado_livre")
         :type marketplace: str
-
-        :return: The total of products of the given marketplace.
-        :rtype: int
         """
 
         query: str = """
@@ -60,13 +57,10 @@ class MySqlService:
 
     def get_total_products_by_category(self) -> List[Dict[str, int]]:
         """
-        Selects the total of each product by their category.
-
-        :return: A list with the categories and their respective amount of products.
-        :rtype: List[Dict[str, int]]
+        Selects the `COUNT` value from the total of products, for each category.
         """
 
-        query = """
+        query: str = """
             SELECT prd_canonico.categoria_canonica AS categoria, COUNT(DIM_listing.titulo) AS total
             FROM DIM_produto_canonico AS prd_canonico
             JOIN BRIDGE_produto_listing AS prd_listing ON prd_canonico.sk_produto = prd_listing.sk_produto
@@ -84,16 +78,13 @@ class MySqlService:
 
     def get_total_products_by_category_by_marketplace(self, marketplace: str) -> List[Dict[str, int]]:
         """
-        Selects the total of each product by their category, by marketplace.
+        Selects the `COUNT` value from the total of products, for each category.
 
-        :param marketplace: The name of the respective marketplace.
+        :param marketplace: The name of the marketplace to be used as filter (e.g. "magalu", "mercado_livre")
         :type marketplace: str
-
-        :return: A list with the category names, along with their respective amount of products.
-        :rtype: List[Dict[str, int]]
         """
 
-        query = """
+        query: str = """
             SELECT prd_canonico.categoria_canonica AS categoria, COUNT(DIM_listing.titulo) AS total
             FROM DIM_produto_canonico AS prd_canonico
             JOIN BRIDGE_produto_listing AS prd_listing ON prd_canonico.sk_produto = prd_listing.sk_produto
@@ -112,18 +103,15 @@ class MySqlService:
         return items
 
 
-    def get_avg_price_by_product(self, marketplace: str) -> List[Dict[str, float]]:
+    def get_avg_category_prices(self, marketplace: str) -> List[Dict[str, float]]:
         """
-        Selects the `AVG` price of the each category from the given marketplace.
+        Selects the `AVG` price of the each product category.
 
-        :param marketplace: The name of the respective marketplace.
+        :param marketplace: The name of the marketplace to be used as filter (e.g. "magalu", "mercado_livre")
         :type marketplace: str
-
-        :return: A list with the category names, along with their respective avg. prices, sorted in descending order.
-        :rtype: List[Dict[str, float]]
         """
 
-        query = """
+        query: str = """
             SELECT prd_canonico.categoria_canonica AS categoria, AVG(preco.preco) AS preco
             FROM FATO_preco AS preco
             JOIN DIM_listing AS listing ON preco.sk_listing = listing.sk_listing
@@ -140,22 +128,19 @@ class MySqlService:
         cursor.execute(query, params)
         rows = cursor.fetchall()
 
-        items = [{ "title": row.get("categoria", ""), "price": round(row.get("preco", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
+        items = [{ "category": row.get("categoria", ""), "price": float(round(row.get("preco", 0.00), 2)) } for row in rows]  # type: ignore (Pylance extension)
         return items
 
 
-    def get_top3_product_rating(self, marketplace: str) -> List[Dict[str, float]]:
+    def get_top3_best_product_rating(self, marketplace: str) -> List[Dict[str, float]]:
         """
-        Selects the TOP 3 best product ratings for the given marketplace.
+        Selects the TOP 3 best product ratings.
 
-        :param marketplace: The name of the respective marketplace.
+        :param marketplace: The name of the marketplace to be used as filter (e.g. "magalu", "mercado_livre")
         :type marketplace: str
-
-        :return: A list with the product names, along with their respective ratings.
-        :rtype: List[Dict[str, float]]
         """
 
-        query = """
+        query: str = """
             WITH ultimo_preco AS (
                 SELECT fp.sk_listing, fp.avaliacao, ROW_NUMBER() OVER (PARTITION BY fp.sk_listing ORDER BY fp.sk_tempo DESC) AS rn
                 FROM FATO_preco fp
@@ -186,22 +171,19 @@ class MySqlService:
         cursor.execute(query, params)
         rows = cursor.fetchall()
 
-        items = [{ "product": row.get("nome_canonico", "")[:35], "rating": round(row.get("media_avaliacao", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
+        items = [{ "product": row.get("nome_canonico", ""), "rating": float(round(row.get("media_avaliacao", 0.00), 2)) } for row in rows]  # type: ignore (Pylance extension)
         return items
 
 
-    def get_top5_most_expensive_products_by_marketplace(self, marketplace: str) -> List[Dict[str, float]]:
+    def get_top5_expensive_products_prices(self, marketplace: str) -> List[Dict[str, float]]:
         """
-        Selects the TOP 5 most expensive products for the given marketplace.
+        Selects the TOP 5 most expensive product prices.
 
-        :param marketplace: The name of the respective marketplace.
+        :param marketplace: The name of the marketplace to be used as filter (e.g. "magalu", "mercado_livre")
         :type marketplace: str
-
-        :return: A list with the product names, along with their respective prices.
-        :rtype: List[Dict[str, float]]
         """
 
-        query = """
+        query: str = """
             WITH ultimo_por_listing AS (
                 SELECT fp.sk_listing, fp.preco, fp.avaliacao, fp.sk_tempo, ROW_NUMBER() OVER (PARTITION BY fp.sk_listing ORDER BY fp.sk_tempo DESC) AS rn
                 FROM FATO_preco fp
@@ -233,25 +215,22 @@ class MySqlService:
         cursor.execute(query, params)
         rows = cursor.fetchall()
 
-        items = [{ "product": row.get("nome_canonico", "")[:15], "price": round(row.get("preco_medio", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
+        items = [{ "product": row.get("nome_canonico", "")[:15], "price": float(round(row.get("preco_medio", 0.00), 2)) } for row in rows]  # type: ignore (Pylance extension)
         return items
 
 
-    def get_category_price_variance_over_time(self, marketplace: str, category: str) -> List[Dict[str, float]]:
+    def get_avg_category_prices_over_time(self, marketplace: str, category: str) -> Dict[str, List[Any]]:
         """
-        Selects the `AVG` price of products by the given category, for the given marketplace,
-        along with the date on which the data was collected.
+        Selects the `AVG` price a certain category along with the date on which the data was collected.
 
-        :param marketplace: The name of the respective marketplace.
+        :param marketplace: The name of the marketplace to be used as filter (e.g. "magalu", "mercado_livre")
         :type marketplace: str
 
         :param category: The name of the category of which a product belongs.
         :type marketplace: str
-
-        :return: A list with the date on which the product data was collected, along with their respective avg. prices.
         """
 
-        query = """
+        query: str = """
             SELECT t.data_coleta, pc.categoria_canonica, AVG(fp.preco) AS preco_medio, MIN(fp.preco) AS preco_min, MAX(fp.preco) AS preco_max
             FROM FATO_preco fp
             JOIN DIM_tempo t ON fp.sk_tempo = t.sk_tempo
@@ -269,5 +248,7 @@ class MySqlService:
         cursor.execute(query, params)
         rows = cursor.fetchall()
 
-        items = [{ "date": str(row.get("data_coleta", ""))[:10], "avg_price": round(row.get("preco_medio", 0.00), 2) } for row in rows]  # type: ignore (Pylance extension)
+        dates: List[str] = [str(row.get("data_coleta", ""))[:10] for row in rows]  # type: ignore (Pylance extension)
+        avg_prices: List[float] = [float(round(row.get("preco_medio", 0.00), 2)) for row in rows]  # type: ignore (Pylance extension)
+        items: Dict[str, List[Any]] = { "dates": dates, "avg_prices": avg_prices }
         return items
