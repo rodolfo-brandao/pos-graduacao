@@ -1,1 +1,1 @@
-# Linguagens Python e R com Foco em Análise de Dados I
+# Linguagem Python com Foco em Análise de Dados
