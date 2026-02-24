@@ -19,7 +19,7 @@
 
 Para executar os códigos Python deste repositório, é necessário (e recomendado) criar e utilizar um ambiente virtual (`.venv`). Dessa forma, é possível centralizar todas as dependências em um único lugar, além de evitar conflito entre versões.
 
-### Setup inicial
+### Setup
 
 - Clonar o repositório:
 ```bash
@@ -30,7 +30,7 @@ git clone https://github.com/rodolfo-brandao/pos-graduacao.git
 cd pos-graduacao
 ```
 
-- Gerenciar o ambiente virtual
+- Gerenciar ambiente:
 ```bash
 python3 -m venv .venv
 ```
