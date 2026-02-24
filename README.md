@@ -21,32 +21,28 @@ Para executar os códigos Python deste repositório, é necessário (e recomenda
 
 ### Setup inicial
 
-1. Clonar o repositório:
+- Clonar o repositório:
 ```bash
 git clone https://github.com/rodolfo-brandao/pos-graduacao.git
 ```
 
-2. Navegar até a pasta raíz:
 ```bash
 cd pos-graduacao
 ```
 
-3. Criar o ambiente virtual:
+- Gerenciar o ambiente virtual
 ```bash
 python3 -m venv .venv
 ```
 
-4. Ativá-lo:
 ```bash
 source .venv/bin/activate
 ```
 
-5. Instalar as dependências:
 ```bash
 pip install -r requirements.txt
 ```
 
-6. Adicionar novas dependências (se necessário):
 ```bash
 pip freeze > requirements.txt
 ```
