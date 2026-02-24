@@ -1,5 +1,7 @@
-ALTER SESSION SET CONTAINER = XEPDB1;
+-- DDL and DML script used in "modulos/modulo-07"
 
+
+ALTER SESSION SET CONTAINER = XEPDB1;
 
 -- Create tablespaces (adjusted paths for Linux inside container)
 CREATE TABLESPACE dados_acad
