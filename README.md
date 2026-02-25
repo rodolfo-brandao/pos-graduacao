@@ -1,8 +1,8 @@
 # Pós-graduação Lato Sensu em Ciência de Dados e Inteligência Artificial
 
-![Python version](https://img.shields.io/badge/Language-pt--BR-red)
-![Python version](https://img.shields.io/badge/Python-3.14-blue)
-![Last GitHub commit](https://img.shields.io/github/last-commit/rodolfo-brandao/pos-graduacao)
+![Repository language](https://img.shields.io/badge/Language-pt--BR-009C3B)
+![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
+![Last GitHub commit](https://img.shields.io/github/last-commit/rodolfo-brandao/pos-graduacao?style=flat&logo=git&logoColor=red&color=red)
 
 ## Módulos
 
@@ -30,7 +30,7 @@ git clone https://github.com/rodolfo-brandao/pos-graduacao.git
 cd pos-graduacao
 ```
 
-- Gerenciar ambiente:
+- Criar, ativar e instalar as dependências:
 ```bash
 python3 -m venv .venv
 ```
