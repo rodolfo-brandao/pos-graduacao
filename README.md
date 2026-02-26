@@ -2,7 +2,7 @@
 
 ![Repository language](https://img.shields.io/badge/Language-pt--BR-009C3B)
 ![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
-![Last GitHub commit](https://img.shields.io/github/last-commit/rodolfo-brandao/pos-graduacao?style=flat&logo=git&logoColor=red&color=red)
+![Last GitHub commit](https://img.shields.io/github/last-commit/rodolfo-brandao/pos-graduacao?logo=git&logoColor=red&color=red)
 
 ## Módulos
 
