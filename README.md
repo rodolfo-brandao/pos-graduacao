@@ -13,6 +13,7 @@
 6. [Álgebra Linear para Ciência de Dados](modulos/modulo-06) (2025)
 7. [Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados](modulos/modulo-07) (2025)
 8. [Pré-processamento de Dados](modulos/modulo-08) (2026)
+9. [Visualização de Dados](modulos/modulo-09/) (2026)
 
 ## Ambiente Virtual Python
 
@@ -40,8 +41,4 @@ source .venv/bin/activate
 
 ```bash
 pip install -r requirements.txt
-```
-
-```bash
-pip freeze > requirements.txt
 ```
