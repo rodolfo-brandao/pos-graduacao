@@ -1,10 +1,8 @@
 """
 This is the Streamlit Dashboard entrypoint.
 
-
-To run this app:
-- On root folder, activate the .venv
-- Run: $ streamlit modulos/modulo-08/dashboard.py
+Run (root folder):
+    $ streamlit run modulos/modulo-08/dashboard.py
 """
 
 
