@@ -1,9 +1,7 @@
 """
 This is the Streamlit Dashboard entrypoint.
 
-1. On root folder:
-    $ source .venv/bin/activate
-2. Run the app:
+[venv] On root folder, run:
     $ streamlit run modulos/modulo-09/dashboard.py
 """
 
@@ -18,29 +16,38 @@ df = pd.read_csv(
 
 
 st.set_page_config(
-    page_title="Obras de Sergipe",
+    page_title="Obras de Sergipe – Dashboard",
     page_icon="📊",
     layout="wide",
 )
-st.title("📊 Dashboard: Obras de Sergipe")
-st.markdown("⚠️ Aviso: Os dados apresentados aqui são puramente fictícios, gerados por Inteligência Artificial.")
+st.title(
+    body="📊 Obras de Sergipe – Dashboard"
+)
+st.markdown(
+    body="⚠️ Aviso: Os dados apresentados aqui são puramente fictícios, gerados por Inteligência Artificial."
+)
 
 
-# ----- Section 01 -----
+# ===== Section 01 =====
 st.subheader("🚧 Obras Atrasadas por Secretaria")
-row1_col1, row1_col2, row1_col3 = st.columns(3)
-frozen_works_df = df[df["status_obra"] == "Paralisada"]
 
-with row1_col1:
+(
+    sec1_col1,
+    sec1_col2,
+    sec1_col3
+) = st.columns(3, gap="medium", border=True)
+
+with sec1_col1:
     st.markdown("#### 🗓️ Total de Dias")
-    delayed_days_df = (
+
+    temp_df = (
         df.groupby("secretaria_responsavel")["dias_de_atraso"]
         .sum()
         .reset_index()
     )
 
     st.bar_chart(
-        data=delayed_days_df,
+        data=temp_df,
         x="secretaria_responsavel",
         y="dias_de_atraso",
         x_label="Dias Atrasados",
@@ -51,16 +58,17 @@ with row1_col1:
         height=300
     )
 
-with row1_col2:
+with sec1_col2:
     st.markdown("#### 💰 Orçamento Inicial")
-    total_amount_df = (
+
+    temp_df = (
         df.groupby("secretaria_responsavel")["orcamento_inicial_reais"]
         .sum()
         .reset_index()
     )
 
     st.bar_chart(
-        data=total_amount_df,
+        data=temp_df,
         x="secretaria_responsavel",
         y="orcamento_inicial_reais",
         x_label="Orçamento",
@@ -71,16 +79,16 @@ with row1_col2:
         height=300
     )
 
-with row1_col3:
+with sec1_col3:
     st.markdown("#### 💸 Orçamento Adicional")
-    extra_amount_df = (
+    temp_df = (
         df.groupby("secretaria_responsavel")["valor_aditivos_reais"]
         .sum()
         .reset_index()
     )
 
     st.bar_chart(
-        data=extra_amount_df,
+        data=temp_df,
         x="secretaria_responsavel",
         y="valor_aditivos_reais",
         x_label="Orçamento",
