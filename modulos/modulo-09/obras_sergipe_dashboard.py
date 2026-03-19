@@ -81,6 +81,7 @@ with sec1_col2:
 
 with sec1_col3:
     st.markdown("#### 💸 Orçamento Adicional")
+
     temp_df = (
         df.groupby("secretaria_responsavel")["valor_aditivos_reais"]
         .sum()
