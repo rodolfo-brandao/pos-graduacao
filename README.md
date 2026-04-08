@@ -14,6 +14,7 @@
 7. [Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados](modulos/modulo-07) (2025)
 8. [Pré-processamento de Dados](modulos/modulo-08) (2026)
 9. [Visualização de Dados](modulos/modulo-09/) (2026)
+10. [Machine Learning - Teoria](modulos/modulo-10/) (2026)
 
 ## Ambiente Virtual Python
 
