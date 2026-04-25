@@ -1,6 +1,6 @@
 # Pós-graduação Lato Sensu em Ciência de Dados e Inteligência Artificial
 
-![Repository language](https://img.shields.io/badge/Language-pt--BR-009C3B)
+![Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
 ![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
@@ -19,7 +19,9 @@
 
 ## Ambiente Virtual Python
 
-Para executar os códigos Python deste repositório, é recomendado criar e utilizar um ambiente virtual (`.venv`). Dessa forma, é possível centralizar todas as dependências em um único lugar, além de evitar conflito entre versões.
+Para executar os códigos Python deste repositório, é recomendado utilizar um ambiente virtual `.venv`. 
+
+Dessa forma, é possível centralizar todas as dependências em um único lugar, além de evitar conflito entre versões.
 
 ### Setup
 
@@ -44,3 +46,11 @@ source .venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+## Sobre o TCC
+
+A produção do artigo do projeto final será baseado no template oficial da [Sociedade Brasileira de Computação (SBC)](https://www.sbc.org.br/), no qual pode ser acessado [aqui](https://www.sbc.org.br/documentosinstitucionais/#publicacoes).
+
+Paral tal, basta navegar sobre o menu:
+- _Templates para Artigos e Capítulos de Livros_
+    - _Modelos para Publicação de Artigos_
