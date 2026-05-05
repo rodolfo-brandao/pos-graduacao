@@ -2,7 +2,6 @@
 
 ![Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
 ![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
 ## Módulos
 
