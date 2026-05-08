@@ -13,7 +13,6 @@ pos-graduacao/
 ├── datasets/       # Input data files (CSV, Excel, etc.)
 ├── docker/         # Docker-related configuration files
 ├── modulos/        # One subfolder per course module (modulo-01, modulo-02, ...)
-├── templates/      # Official scientific paper template references from SBC (Sociedade Brasileira de Computação)
 ├── .env.example    # Reference for required environment variables
 ├── requirements.txt
 └── CLAUDE.md
@@ -29,6 +28,7 @@ Each `modulos/modulo-XX` folder maps to a course subject:
 - `modulo-08` — Data Preprocessing
 - `modulo-09` — Data Visualization
 - `modulo-10` — Machine Learning (Theory)
+- `modulo-11` — Machine Learning (Theory and Practice)
 
 Modules 03 and 04 are R-only — do not touch them.
 
