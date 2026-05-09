@@ -18,34 +18,26 @@
 10. [Machine Learning - Teoria](modulos/modulo-10/) (2026)
 11. [Machine Learning - Teoria e Prática](modulos/modulo-11/) (2026)
 
-## Ambiente Virtual Python
+## Virtual Environment e Dependências
 
-Para executar os códigos Python deste repositório, é recomendado utilizar um ambiente virtual `.venv`. 
-
-Dessa forma, é possível centralizar todas as dependências em um único lugar, além de evitar conflito entre versões.
-
-### Setup
-
-- Clonar o repositório:
+- Criar `.venv` e instalar dependências
 ```bash
-git clone https://github.com/rodolfo-brandao/pos-graduacao.git
+uv sync
 ```
 
+- Adicionar novas dependências
 ```bash
-cd pos-graduacao
+uv add <package-name>
 ```
 
-- Gerenciar `.venv` e dependências:
+- Sincronizar o arquivo `uv.lock` depois de adicionar uma dependência
 ```bash
-python3 -m venv .venv
+uv sync
 ```
 
+- Remover uma dependência
 ```bash
-source .venv/bin/activate
-```
-
-```bash
-pip install -r requirements.txt
+uv remove <package-name>
 ```
 
 ## Sobre o TCC
