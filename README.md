@@ -4,6 +4,11 @@
 ![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
+> [!NOTE]
+> _Sobre o uso de Inteligência Artificial (especialmente LLMs), este repositório **não** utiliza código gerado por IA ("vibe-coded"). Todo o código é escrito manualmente._
+>
+>_O [Claude Code](https://claude.ai/code) é utilizado estritamente como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações, exploração de trade-offs e decisões de design — nunca para gerar ou sugerir código que entre neste repositório._
+
 ## Módulos
 
 1. [Introdução, Definições e Exemplos](modulos/modulo-01) (2025)
@@ -21,23 +26,23 @@
 ## Virtual Environment e Dependências
 
 - Criar `.venv` e instalar dependências
-```bash
+```
 uv sync
 ```
 
 - Adicionar novas dependências
-```bash
+```
 uv add <package-name>
 ```
 
-- Sincronizar o arquivo `uv.lock` depois de adicionar uma dependência
-```bash
-uv sync
+- Remover uma dependência
+```
+uv remove <package-name>
 ```
 
-- Remover uma dependência
-```bash
-uv remove <package-name>
+- Sincronizar o arquivo `uv.lock` depois de adicionar/remover uma dependência
+```
+uv sync
 ```
 
 ## Sobre o TCC
@@ -47,8 +52,3 @@ A produção do artigo do projeto final será baseado no template oficial da [So
 Paral tal, basta navegar sobre o menu:
 - _Templates para Artigos e Capítulos de Livros_
     - _Modelos para Publicação de Artigos_
-
-> [!NOTE]
-> _Sobre o uso de Inteligência Artificial (especialmente LLMs), este repositório **não** utiliza código gerado por IA ("vibe-coded"). Todo o código é escrito manualmente._
->
->_O [Claude Code](https://claude.ai/code) é utilizado estritamente como ferramenta de análise e insights — para melhor entendimento de bases de código, exploração de trade-offs e decisões de design — nunca para gerar ou sugerir código que entre neste repositório._
