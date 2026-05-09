@@ -1,7 +1,7 @@
 [project]
 name = "pos-graduacao"
 version = "0.1.0"
-description = "Add your description here"
+description = "Materiais e projetos da pós-graduação em Ciência de Dados e Inteligência Artificial"
 readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
