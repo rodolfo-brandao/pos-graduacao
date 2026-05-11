@@ -7,7 +7,7 @@
 > [!NOTE]
 > _A respeito do uso de Inteligência Artificial (especialmente LLMs), este repositório **não** utiliza código gerado por IA ("vibe-coded"). Todo o código é escrito manualmente._
 >
->_O [Claude Code](https://claude.ai/code) é utilizado estritamente como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações, exploração de trade-offs e decisões de design — nunca para gerar ou sugerir código que entre neste repositório._
+>_O [Claude Code](https://claude.ai/code) é utilizado estritamente como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações e trade-offs, além de apoiar em tomadas de decisões — nunca para gerar código que entre neste repositório._
 
 ## Módulos
 
@@ -49,7 +49,12 @@ uv sync
 
 A produção do artigo do projeto final será baseado no template oficial da [Sociedade Brasileira de Computação (SBC)](https://www.sbc.org.br/), no qual pode ser acessado [aqui](https://www.sbc.org.br/documentosinstitucionais/#publicacoes).
 
-Em seguida, basta navegar sobre o menu:
+Na última seção de menus do portal, basta navegar sobre:
 
-- _Templates para Artigos e Capítulos de Livros_
-    - _Modelos para Publicação de Artigos_
+```
+Publicações
+├──Templates para Artigos e Capítulos de Livros
+   └── Modelos para Publicação de Artigos
+```
+
+<img src="assets/sbc-template-menu.png">
