@@ -1,11 +1,11 @@
 # Pós-graduação Lato Sensu em Ciência de Dados e Inteligência Artificial
 
-![Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
+![Repository Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
 ![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
 > [!NOTE]
-> _A respeito do uso de Inteligência Artificial (especialmente LLMs), este repositório **não** utiliza código gerado por IA ("vibe-coded"). Todo o código é escrito manualmente._
+> _A respeito do uso de Inteligência Artificial, este repositório **não** utiliza código gerado por LLMs ("vibe-coded"). Todo o código é escrito manualmente._
 >
 >_O [Claude Code](https://claude.ai/code) é utilizado estritamente como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações e trade-offs, além de apoiar em tomadas de decisões — nunca para gerar código que entre neste repositório._
 
@@ -23,26 +23,36 @@
 10. [Machine Learning - Teoria](modulos/modulo-10/) (2026)
 11. [Machine Learning - Teoria e Prática](modulos/modulo-11/) (2026)
 
-## Virtual Environment e Dependências
+## Setup Inicial
 
-- Criar `.venv` e instalar dependências
-```
-uv sync
+### Requerimentos
+- [Python 3.14](https://www.python.org/downloads/release/python-3140/)
+- [uv](https://docs.astral.sh/uv/)
+
+### Setup
+
+1. Clonar repositório e navegar até sua pasta raiz:
+```bash
+git clone https://github.com/rodolfo-brandao/pos-graduacao.git
+cd pos-graduacao
 ```
 
-- Adicionar novas dependências
+2. Criar `.venv` e ativá-lo:
+```bash
+uv venv .venv
+source .venv/bin/activate
 ```
+
+3. Iniciar o `uv` no novo ambiente virtual:
+   - Criar arquivos `.python-version`, `pyproject.toml` e `uv.lock`
+```bash
+uv init
+```
+
+4. Adicionar/remover dependências:
+```bash
 uv add <package-name>
-```
-
-- Remover uma dependência
-```
 uv remove <package-name>
-```
-
-- Sincronizar o arquivo `uv.lock` depois de adicionar/remover uma dependência
-```
-uv sync
 ```
 
 ## Sobre o TCC
