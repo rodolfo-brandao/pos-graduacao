@@ -8,7 +8,7 @@ Academic repository for a Lato Sensu Post-Graduate program in Data Science and A
 
 ## Environment Setup
 
-Python version is managed by `.python-version` (3.9). Dependencies are managed with `uv`:
+Python version is managed by `.python-version` (3.14). Dependencies are managed with `uv`:
 
 ```bash
 uv sync          # create .venv and install all dependencies

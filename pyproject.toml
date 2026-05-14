@@ -1,7 +1,7 @@
 [project]
 name = "pos-graduacao"
 version = "0.1.0"
-description = "Add your description here"
+description = "Source codes from my Post-Graduate program in Data Science and AI."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
