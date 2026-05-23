@@ -2,6 +2,7 @@
 
 ![Repository Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
 ![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
+![uv version](https://img.shields.io/badge/uv-0.11.16-DE5FE9?logo=uv&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
 > [!NOTE]
@@ -31,28 +32,26 @@
 
 ### Setup
 
-1. Clonar repositório e navegar até sua pasta raiz:
+1. Clonar repositório & navegar até sua pasta raiz:
 ```bash
-git clone https://github.com/rodolfo-brandao/pos-graduacao.git
+git clone https://github.com/rodolfo-brandao/pos-graduacao.git && \
 cd pos-graduacao
 ```
 
 2. Criar `.venv` e ativá-lo:
 ```bash
-uv venv .venv
+uv venv .venv && \
 source .venv/bin/activate
 ```
 
-3. Iniciar o `uv` no novo ambiente virtual:
-   - Criar arquivos `.python-version`, `pyproject.toml` e `uv.lock`
+3. Instalar dependências no respectivo `.venv`:
 ```bash
-uv init
+uv sync
 ```
 
-4. Adicionar/remover dependências:
+4. Copiar `.env.example` para `.env` e preencher os campos necessários:
 ```bash
-uv add <package-name>
-uv remove <package-name>
+cp .env.example .env
 ```
 
 ## Sobre o TCC
