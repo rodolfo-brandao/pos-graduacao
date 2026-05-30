@@ -1,7 +1,8 @@
 # Pós-graduação Lato Sensu em Ciência de Dados e Inteligência Artificial
 
 ![Repository Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
-![Python version](https://img.shields.io/badge/Python-3.14-blue?logo=python&logoColor=white)
+![Python version](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-v7.5-F37626?logo=jupyter&logoColor=white)
 ![uv version](https://img.shields.io/badge/uv-0.11.16-DE5FE9?logo=uv&logoColor=white)
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
@@ -24,11 +25,10 @@
 10. [Machine Learning - Teoria](modulos/modulo-10/) (2026)
 11. [Machine Learning - Teoria e Prática](modulos/modulo-11/) (2026)
 
-## Setup Inicial
-
 ### Requerimentos
-- [Python 3.14](https://www.python.org/downloads/release/python-3140/)
-- [uv](https://docs.astral.sh/uv/)
+
+- [x] [Python 3.14](https://www.python.org/downloads/release/python-3140/)
+- [x] [uv](https://docs.astral.sh/uv/)
 
 ### Setup
 
@@ -54,7 +54,20 @@ uv sync
 cp .env.example .env
 ```
 
-## Sobre o TCC
+## Trabalho de Conclusão de Curso
+
+### Sobre o Projeto
+
+O trabalho de conclusão de curso consiste no desenvolvimento de um sistema RAG (*Retrieval-Augmented Generation*) integrado a uma base de conhecimento em grafos, construída em conjunto desse projeto, com o objetivo de orquestrar agentes de IA capazes de:
+
+- Interpretar e identificar a intenção semântica em perguntas de usuários em linguagem natural
+   - Ex: _Show me thrillers directed by someone who worked with Denis Villeneuve, released after 2015, with high critical reception_
+- Elaborar e executar consultas complexas em Cypher sobre o grafo de conhecimento
+- Sumarizar os resultados e produzir respostas em linguagem natural
+
+O projeto é denominado **Cinematica** e está disponível em repositório próprio no GitHub, acessível [aqui](https://github.com/rodolfo-brandao/cinematica).
+
+### Sobre o Artigo
 
 A produção do artigo do projeto final será baseado no template oficial da [Sociedade Brasileira de Computação (SBC)](https://www.sbc.org.br/), no qual pode ser acessado [aqui](https://www.sbc.org.br/documentosinstitucionais/#publicacoes).
 
