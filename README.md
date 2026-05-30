@@ -58,7 +58,7 @@ cp .env.example .env
 
 ### Sobre o Projeto
 
-O trabalho de conclusão de curso consiste no desenvolvimento de um sistema RAG (*Retrieval-Augmented Generation*) integrado a uma base de conhecimento em grafos, construída em conjunto desse projeto, com o objetivo de orquestrar agentes de IA capazes de:
+O trabalho final consiste no desenvolvimento de um sistema RAG (*Retrieval-Augmented Generation*) integrado a uma base de conhecimento em grafos, construída em conjunto desse projeto, com o objetivo de orquestrar agentes de IA capazes de:
 
 - Interpretar e identificar a intenção semântica em perguntas de usuários em linguagem natural
    - Ex: _Show me thrillers directed by someone who worked with Denis Villeneuve, released after 2015, with high critical reception_
