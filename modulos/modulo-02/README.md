@@ -1,6 +1,6 @@
 # Linguagem Python com Foco em Análise de Dados
 
-### Professor(a)
+### Professor
 
 Ayslan Santos Pereira da Costa
 
@@ -14,4 +14,4 @@ Atualmente é docente da Universidade Tiradentes vinculado ao Programa de Pós-G
 
 Tem experiência na área de Matemática, com ênfase em ensino e modelagem matemática aplicada a análises empíricas, possuindo expertise em estatística multivariada, análise de dados, técnicas de inteligência artificial e aplicação da espectroscopia NIR no monitoramento de processos industriais envolvendo petróleo e seus derivados.
 
-(_texto informado pelo(a) docente_)
+(_texto informado pelo docente_)

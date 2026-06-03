@@ -1,8 +1,8 @@
 # Introdução, Definições e Exemplos – Ciência de Dados e Inteligência Artificial
 
-### Professor(a)
+### Professor
 
-Victor Flávio de Andrade Araujo (também coordenador)
+Victor Flávio de Andrade Araujo (coordenador)
 
 - [Lattes](http://lattes.cnpq.br/6758038617446708)
 - [Google Acadêmico](https://scholar.google.com/citations?user=RqpCru4AAAAJ&hl=pt-BR)
@@ -15,4 +15,4 @@ Dr. Araujo também é pesquisador de pós-doutorado do CNPq (INCT-SANI), e tamb�
 
 Possui graduação em Ciência da Computação pela Universidade Tiradentes (2017). Tem experiência na área de Ciência da Computação, atuando principalmente nos seguintes temas: percepção, humanos virtuais, visualização de crowd data, jogos sérios, jogos educativos e Computação Gráfica.
 
-(_texto informado pelo(a) docente_)
+(_texto informado pelo docente_)
