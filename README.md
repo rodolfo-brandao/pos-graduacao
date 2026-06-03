@@ -25,6 +25,8 @@
 10. [Machine Learning - Teoria](modulos/modulo-10/) (2026)
 11. [Machine Learning - Teoria e Prática](modulos/modulo-11/) (2026)
 
+## Setup Inicial
+
 ### Requerimentos
 
 - [x] [Python 3.14](https://www.python.org/downloads/release/python-3140/)
