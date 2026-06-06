@@ -60,7 +60,7 @@ cp .env.example .env
 
 ## Trabalho de Conclusão de Curso
 
-[![Overleaf project](https://img.shields.io/badge/Acessar-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
+[![Overleaf project](https://img.shields.io/badge/View_on-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
 
 ### Sobre o Projeto
 
