@@ -23,7 +23,8 @@
 8. [Pré-processamento de Dados](modulos/modulo-08) (2026)
 9. [Visualização de Dados](modulos/modulo-09/) (2026)
 10. [Machine Learning - Teoria](modulos/modulo-10/) (2026)
-11. [Machine Learning - Teoria e Prática](modulos/modulo-11/) (2026)
+11. [Machine Learning - Teoria e Prática I](modulos/modulo-11/) (2026)
+12. [Machine Learning - Teoria e Prática II](modulos/modulo-12/) (2026)
 
 ## Setup Inicial
 
