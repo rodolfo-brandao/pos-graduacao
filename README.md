@@ -60,6 +60,8 @@ cp .env.example .env
 
 ## Trabalho de Conclusão de Curso
 
+[![Overleaf project](https://img.shields.io/badge/Acessar-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
+
 ### Sobre o Projeto
 
 O trabalho final consiste no desenvolvimento de um sistema RAG (*Retrieval-Augmented Generation*) integrado a uma base de conhecimento em grafos, construída em conjunto desse projeto, com o objetivo de orquestrar agentes de IA capazes de:
