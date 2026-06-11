@@ -8,7 +8,7 @@
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
 > [!NOTE]
-> _A respeito do uso de Inteligência Artificial: **quando necessário**, este repositório utiliza LLMs para geração de código. Contudo, todo código gerado é **sempre** revisado por mim (@rodolfo-brandao), o autor deste repositório._
+> _A respeito do uso de Inteligência Artificial: quando necessário, LLMs são utilizadas para geração de código. Contudo, todo código gerado é **sempre** revisado por mim (@rodolfo-brandao), o autor deste repositório._
 >
 >_O que me fez adotar essa abordagem? [Este post](https://x.com/karpathy/status/2015883857489522876) do [Andrej Karpathy](https://github.com/karpathy) e [esta nota](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) de ninguém menos que [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)._
 >
@@ -62,20 +62,20 @@ cp .env.example .env
 
 ## Trabalho de Conclusão de Curso
 
-[![Overleaf project](https://img.shields.io/badge/View_on-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
-
 ### Sobre o Projeto
 
 O trabalho final consiste no desenvolvimento de um sistema RAG (*Retrieval-Augmented Generation*) integrado a uma base de conhecimento em grafos, construída em conjunto desse projeto, com o objetivo de orquestrar agentes de IA capazes de:
 
 - Interpretar e identificar a intenção semântica em perguntas de usuários em linguagem natural
-   - Ex: _Show me thrillers directed by someone who worked with Denis Villeneuve, released after 2015, with high critical reception_
+   - Ex: `Show me thrillers directed by someone who worked with Denis Villeneuve, released after 2015, with high critical reception`
 - Elaborar e executar consultas complexas em Cypher sobre o grafo de conhecimento
 - Sumarizar os resultados e produzir respostas em linguagem natural
 
 O projeto é denominado **Cinematica** e está disponível em repositório próprio no GitHub, acessível [aqui](https://github.com/rodolfo-brandao/cinematica).
 
 ### Sobre o Artigo
+
+[![Overleaf project](https://img.shields.io/badge/View_on-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
 
 A produção do artigo do projeto final será baseado no template oficial da [Sociedade Brasileira de Computação (SBC)](https://www.sbc.org.br/), no qual pode ser acessado [aqui](https://www.sbc.org.br/documentosinstitucionais/#publicacoes).
 
