@@ -8,9 +8,11 @@
 ![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
 > [!NOTE]
-> _A respeito do uso de Inteligência Artificial, este repositório **não** utiliza código gerado por LLMs ("vibe-coded"). Todo o código é escrito manualmente._
+> _A respeito do uso de Inteligência Artificial: **quando necessário**, este repositório utiliza LLMs para geração de código. Contudo, todo código gerado é **sempre** revisado por mim (@rodolfo-brandao), o autor deste repositório._
 >
->_O [Claude Code](https://claude.ai/code) é utilizado estritamente como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações e trade-offs, além de apoiar em tomadas de decisões — nunca para gerar código que entre neste repositório._
+>_O que me fez adotar essa abordagem? [Este post](https://x.com/karpathy/status/2015883857489522876) do [Andrej Karpathy](https://github.com/karpathy) e [esta nota](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) de ninguém menos que [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth)._
+>
+>_Para as demais necessidades, o [Claude Code](https://claude.ai/code) é utilizado como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações e trade-offs, além de apoiar em tomadas de decisão._
 
 ## Módulos
 
