@@ -1,17 +1,17 @@
-# Linguagem R com Foco em Análise de Dados
+# Linguagem Python com Foco em Análise de Dados
 
-### Professora
+### Professor
 
-Bruna Martini Dalmoro
+Ayslan Santos Pereira da Costa
 
-- [Lattes](http://lattes.cnpq.br/5815036554844486)
+- [Lattes](http://lattes.cnpq.br/5150904300028773)
 
 ### Sobre
 
-Cientista de dados, Mestre em Ciência da Computação pela Pontifícia Universidade Católica do Rio Grande do Sul (2021) e bacharela em Estatística pela Universidade Federal do Rio Grande do Sul (2018).
+Possui graduação em Matemática (Licenciatura) pela Universidade Tiradentes (2012), Mestrado (2016) e Doutorado (2020) em Engenharia de Processos pela mesma instituição (PEP/UniT). Realizou estágio de Pós-Doutorado com bolsa FAPESP, atuando como colaborador no grupo de pesquisa ALFA (Artificial Lift and Flow Assurance Research Group), vinculado ao Centro de Estudos de Energia e Petróleo (Cepetro/Unicamp), onde desenvolveu estudos voltados ao desenvolvimento de modelos matemáticos para detecção do ponto de inversão de fases e determinação da viscosidade em emulsões de petróleo.
 
-Sua pesquisa do mestrado teve foco em aplicação estatística em análise da percepção humana em imagens, sob orientação da professora Dr Soraia Musse. Atualmente, atua como Cientista de dados no Centro Administrativo Sicredi, realizando análise e modelagem estatística para concessão de crédito. É professora visitante da UNIT, onde leciona disciplinas de Linguagens Python e R com Foco em Análise de Dados e Estatística para Ciência de Dados.
+Atualmente é docente da Universidade Tiradentes vinculado ao Programa de Pós-Graduação em Engenharia de Processos (PEP/UniT). Desenvolve atividades de pesquisa junto ao Instituto de Tecnologia e Pesquisa (ITP) nas áreas de modelagem e simulação de processos, além do monitoramento de sistemas multifásicos, com ênfase no uso de técnicas de inteligência artificial e espectroscopia no infravermelho próximo (NIR).
 
-Foi professora visitante na Unisinos, lecionando disciplinas de Estatística Descritiva e Econometria, e Estatística Preditiva. Além disso, contribui para a comunidade científica como organizadora do R-Ladies Porto Alegre, grupo de promove a diversidade de gênero na comunidade R. 
+Tem experiência na área de Matemática, com ênfase em ensino e modelagem matemática aplicada a análises empíricas, possuindo expertise em estatística multivariada, análise de dados, técnicas de inteligência artificial e aplicação da espectroscopia NIR no monitoramento de processos industriais envolvendo petróleo e seus derivados.
 
-(_texto informado pela docente_)
+(_texto informado pelo docente_)

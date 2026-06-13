@@ -19,8 +19,8 @@
 ## Módulos
 
 1. [Introdução, Definições e Exemplos](src/modulo-01) (2025)
-2. [Linguagem Python com Foco em Análise de Dados](src/modulo-02) (2025)
-3. [Linguagem R com Foco em Análise de Dados](src/modulo-03) (2025)
+2. [Linguagem R com Foco em Análise de Dados](src/modulo-02) (2025)
+3. [Linguagem Python com Foco em Análise de Dados](src/modulo-03) (2025)
 4. [Estatística - Análise Descritiva, Probabilidade e Inferência com R](src/modulo-04) (2025)
 5. [Estatística - Análise Descritiva, Probabilidade e Inferência com Python](src/modulo-05) (2025)
 6. [Álgebra Linear para Ciência de Dados](src/modulo-06) (2025)
