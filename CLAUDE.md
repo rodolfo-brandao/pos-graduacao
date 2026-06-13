@@ -24,7 +24,7 @@ Both dashboards must be run from the **repository root**:
 # Módulo 08 – PlusMarket marketplace data (requires MySQL via .env)
 streamlit run modulos/modulo-08/dashboard.py
 
-# Módulo 09 – Obras públicas de Sergipe (reads from datasets/mock_obras_publicas_se_2022_2026.csv)
+# Módulo 09 – Obras públicas de Sergipe (reads from data/mock_obras_publicas_se_2022_2026.csv)
 streamlit run modulos/modulo-09/obras_sergipe_dashboard.py
 ```
 
@@ -70,7 +70,7 @@ Each module lives under `modulos/modulo-XX/` and is self-contained:
 | 10 | ML Theory | `atividade_01.ipynb`, `relatorio_final.ipynb` |
 | 11 | ML Theory & Practice | Q-learning + MDP value iteration notebooks |
 
-Shared datasets are in `datasets/`. The `docker/` folder holds Compose files for local database services.
+Shared datasets are in `data/`. The `docker/` folder holds Compose files for local database services.
 
 ## Módulo 08 Architecture
 

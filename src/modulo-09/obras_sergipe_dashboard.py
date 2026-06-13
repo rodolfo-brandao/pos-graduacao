@@ -11,7 +11,7 @@ import streamlit as st
 
 
 df = pd.read_csv(
-    filepath_or_buffer="datasets/mock_obras_publicas_se_2022_2026.csv"
+    filepath_or_buffer="data/mock_obras_publicas_se_2022_2026.csv"
 )
 
 
