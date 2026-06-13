@@ -215,11 +215,14 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# VS Code files
+# VS Code
 *.vscode
 
-# macOS files
+# macOS
 .DS_Store
 
-# Large CSV files
+# Large CSV datasets
 *microdados-enem-2023-nordeste.csv
+
+# Claude Code
+.claude/settings.json
