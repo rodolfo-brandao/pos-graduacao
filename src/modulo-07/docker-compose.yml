@@ -1,0 +1,63 @@
+version: '3.9'
+
+services:
+  oracle-xe:
+    image: gvenzl/oracle-xe:21
+    container_name: oracle-xe
+    restart: unless-stopped
+    environment:
+      ORACLE_PASSWORD: oracle
+      APP_USER: app_user
+      APP_USER_PASSWORD: app_pass
+      ORACLE_CHARACTERSET: AL32UTF8
+    ports:
+      - "1521:1521"   # Database (JDBC/SQL*Net)
+      - "5500:5500"   # Oracle Enterprise Manager Express
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+    shm_size: 1g
+
+  dbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: dbeaver-web
+    ports:
+      - "8978:8978"   # Web UI: http://localhost:8978
+    environment:
+      CB_SERVER_NAME: "DBeaver Web"
+      CB_ADMIN_NAME: "admin"
+      CB_ADMIN_PASSWORD: "admin"
+    volumes:
+      - dbeaver_data:/opt/cloudbeaver/workspace
+    restart: always
+
+  redis:
+    image: redis
+    container_name: myredis
+    ports:
+      - "6379:6379"
+
+  mongo:
+    image: mongo
+    container_name: mymongo
+    ports:
+      - "27017:27017"
+
+  cassandra:
+    image: cassandra
+    container_name: mycassandra
+    ports:
+      - "9042:9042"
+
+  neo4j:
+    image: neo4j
+    container_name: myneo4j
+    environment:
+      - NEO4J_AUTH=none
+    ports:
+      - "7687:7687"
+      - "7473:7473"
+      - "7474:7474"
+
+volumes:
+  oracle-data:
+  dbeaver_data:
