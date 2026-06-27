@@ -10,11 +10,11 @@ Write code as an expert Python Software Engineer would. The following are mandat
 
 - **Explicit imports:** Group imports at the top of the file and never use wildcard imports (`from module import *`).
 
-- **Docstrings everywhere:** Every module and every function/method MUST have its own docstring (except `__init__.py` files). Follow the existing Sphinx/reStructuredText style used in the codebase (`:param:`, `:type:`, `:return:`, `:rtype:`) — see `src/imdb/loader.py`.
+- **Docstrings everywhere:** Every module and every function/method MUST have its own docstring (except `__init__.py` files). Follow the existing Sphinx/reStructuredText style used in the codebase (`:param:`, `:type:`, `:return:`, `:rtype:`).
 
 - **Type hints:** Annotate all function signatures and public attributes with explicit type hints, mirroring the existing use of `typing` (`List`, `Dict`, `Iterator`, etc.).
 
-- **Immutability:** Prefer frozen dataclasses (`@dataclass(frozen=True)`) for data models, as in `src/models/`.
+- **Immutability:** Prefer frozen dataclasses (`@dataclass(frozen=True)`) for data models.
 
 - **Explicit keyword arguments:** Pass arguments by keyword where it improves clarity, consistent with existing calls (e.g., `gzip.open(filename=..., mode=..., encoding=...)`).
 
@@ -28,6 +28,4 @@ Write code as an expert Python Software Engineer would. The following are mandat
 
 - **Linting:** Code MUST pass `pylint src/` cleanly before being considered done.
 
-- **Memory efficiency:** Stream large inputs row-by-row (generators/iterators) instead of loading them into memory, following the pattern in `src/imdb/loader.py`.
-
-- **Async I/O:** Use `async`/`await` with `httpx.AsyncClient` for network calls; bound concurrency with `asyncio.Semaphore` and retry transient failures with `tenacity`, as in `src/clients/tmdb/client.py`.
+- **Memory efficiency:** Stream large inputs row-by-row (generators/iterators) instead of loading them into memory.
