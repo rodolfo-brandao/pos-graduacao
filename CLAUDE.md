@@ -79,6 +79,10 @@ The module follows a layered pattern:
 - `mysql_service.py` — `MySqlService` class wrapping all MySQL queries (reads `.env` for connection)
 - `dashboard.py` — Streamlit entrypoint that calls `MySqlService` and renders charts
 
-## Custom Agent
+## Custom Agents
 
 A `code-reviewer` agent is configured in `.claude/agents/code-reviewer.md`. It performs quality, security, and best-practices review of changed files, grouping findings by severity (critical / major / minor).
+
+## Custom Rules
+
+The file `.claude/rules/code-writing.md` contains rules, best practices, and conventions to be **strictly** followed when writing Python code. So, when prompted, use it.
