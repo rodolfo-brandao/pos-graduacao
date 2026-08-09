@@ -1,4 +1,4 @@
-# Machine Learning - Teoria
+# Machine Learning — Teoria
 
 ### Professor
 

@@ -1,4 +1,4 @@
-# Estatística – Análise Descritiva, Probabilidade e Inferência com R
+# Estatística — Análise Descritiva, Probabilidade e Inferência com R
 
 ### Professora
 

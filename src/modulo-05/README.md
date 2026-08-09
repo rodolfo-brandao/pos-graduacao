@@ -1,4 +1,4 @@
-# Estatística – Análise Descritiva, Probabilidade e Inferência com Python
+# Estatística — Análise Descritiva, Probabilidade e Inferência com Python
 
 ### Professor
 

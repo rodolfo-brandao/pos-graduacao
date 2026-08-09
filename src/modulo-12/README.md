@@ -1,4 +1,4 @@
-# Machine Learning - Teoria e Prática II
+# Machine Learning — Teoria e Prática II
 
 ### Professor
 

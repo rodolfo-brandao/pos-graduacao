@@ -15,16 +15,16 @@
 1. [Introdução, Definições e Exemplos](src/modulo-01) (2025)
 2. [Linguagem R com Foco em Análise de Dados](src/modulo-02) (2025)
 3. [Linguagem Python com Foco em Análise de Dados](src/modulo-03) (2025)
-4. [Estatística - Análise Descritiva, Probabilidade e Inferência com R](src/modulo-04) (2025)
-5. [Estatística - Análise Descritiva, Probabilidade e Inferência com Python](src/modulo-05) (2025)
+4. [Estatística — Análise Descritiva, Probabilidade e Inferência com R](src/modulo-04) (2025)
+5. [Estatística — Análise Descritiva, Probabilidade e Inferência com Python](src/modulo-05) (2025)
 6. [Álgebra Linear para Ciência de Dados](src/modulo-06) (2025)
-7. [Banco de Dados - Relacionais, Não Relacionais e Tópicos Avançados](src/modulo-07) (2025)
+7. [Banco de Dados — Relacionais, Não Relacionais e Tópicos Avançados](src/modulo-07) (2025)
 8. [Pré-processamento de Dados](src/modulo-08) (2026)
 9. [Visualização de Dados](src/modulo-09/) (2026)
-10. [Machine Learning - Teoria](src/modulo-10/) (2026)
-11. [Machine Learning - Teoria e Prática I](src/modulo-11/) (2026)
-12. [Machine Learning - Teoria e Prática II](src/modulo-12/) (2026)
-13. [Deep Learning - Teoria](src/modulo-13/) (2026)
+10. [Machine Learning — Teoria](src/modulo-10/) (2026)
+11. [Machine Learning — Teoria e Prática I](src/modulo-11/) (2026)
+12. [Machine Learning — Teoria e Prática II](src/modulo-12/) (2026)
+13. [Deep Learning — Teoria](src/modulo-13/) (2026)
 
 ## Setup Inicial
 

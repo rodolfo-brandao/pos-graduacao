@@ -1,4 +1,4 @@
-# Deep Learning - Teoria
+# Deep Learning — Teoria
 
 ### Professor
 

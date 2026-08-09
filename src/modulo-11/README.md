@@ -1,4 +1,4 @@
-# Machine Learning - Teoria e Prática I
+# Machine Learning — Teoria e Prática I
 
 ### Professora
 
