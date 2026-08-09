@@ -2,10 +2,9 @@
 
 ### Professor
 
-Victor Flávio de Andrade Araujo (coordenador)
+Victor Flávio de Andrade Araujo
 
 - [Lattes](http://lattes.cnpq.br/6758038617446708)
-- [Google Acadêmico](https://scholar.google.com/citations?user=RqpCru4AAAAJ&hl=pt-BR)
 
 ### Sobre
 
