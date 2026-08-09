@@ -4,8 +4,6 @@
 ![Python version](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
 ![Jupyter version](https://img.shields.io/badge/Jupyter-v7.5-F37626?logo=jupyter&logoColor=white)
 ![R version](https://img.shields.io/badge/R-4.6.0-276DC3?logo=R&logoColor=white)
-![uv version](https://img.shields.io/badge/uv-0.11.16-DE5FE9?logo=uv&logoColor=white)
-![Claude Code](https://img.shields.io/badge/Claude-Code-D97757?logo=claude&logoColor=white)
 
 > [!NOTE]
 > A respeito do uso de Inteligência Artificial: quando necessário, LLMs são utilizadas para geração de código. Contudo, todo código gerado é **sempre** revisado por mim, [@rodolfo-brandao](https://github.com/rodolfo-brandao), autor e único contribuidor deste repositório.
