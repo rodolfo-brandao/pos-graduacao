@@ -8,11 +8,7 @@
 > [!NOTE]
 > A respeito do uso de Inteligência Artificial: quando necessário, LLMs são utilizadas para geração de código. Contudo, todo código gerado é **sempre** revisado por mim, [@rodolfo-brandao](https://github.com/rodolfo-brandao), autor e único contribuidor deste repositório.
 >
-> O que me fez adotar essa abordagem? [Este post](https://x.com/karpathy/status/2015883857489522876) do [Andrej Karpathy](https://github.com/karpathy) e [esta nota](https://www-cs-faculty.stanford.edu/~knuth/papers/claude-cycles.pdf) de ninguém menos que [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth).
->
-> Nas palavras do próprio Karpathy: _It hurts the ego a bit_ :hurtrealbad:
->
-> Para as demais necessidades, o [Claude Code](https://claude.ai/code) é utilizado como ferramenta de análise e insights — para melhor entendimento de bases de código, documentações e trade-offs, além de apoiar em tomadas de decisão.
+> Para as demais necessidades, o [Claude Code](https://claude.ai/code) é utilizado como ferramenta de análise e insights — para melhor entendimento de bases de código e documentações, além de apoiar em tomadas de decisão.
 
 ## Módulos
 
@@ -76,7 +72,7 @@ O projeto é denominado **Cinematica** e está disponível em repositório próp
 
 ### Sobre o Artigo
 
-[![Overleaf project](https://img.shields.io/badge/Overleaf-WIP-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
+[![Overleaf paper](https://img.shields.io/badge/View_on-Overleaf-47A141?logo=overleaf&logoColor=white)](https://www.overleaf.com/read/dwkpqfrqpcfk#41fa5e)
 
 A produção do artigo do projeto final será baseado no template oficial da [Sociedade Brasileira de Computação (SBC)](https://www.sbc.org.br/), no qual pode ser acessado [aqui](https://www.sbc.org.br/documentosinstitucionais/#publicacoes).
 
