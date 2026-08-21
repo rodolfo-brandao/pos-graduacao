@@ -25,6 +25,7 @@
 11. [Machine Learning — Teoria e Prática I](src/modulo-11/) (2026)
 12. [Machine Learning — Teoria e Prática II](src/modulo-12/) (2026)
 13. [Deep Learning — Teoria](src/modulo-13/) (2026)
+14. [Deep Learning — Teoria e Prática](src/modulo-14/) (2026)
 
 ## Setup Inicial
 
