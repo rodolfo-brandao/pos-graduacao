@@ -1,7 +1,7 @@
 # Pós-graduação Lato Sensu em Ciência de Dados e Inteligência Artificial
 
 ![Repository Language](https://img.shields.io/badge/Language-pt--BR-009C3B)
-![Python version](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
+![Python version](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
 ![Jupyter version](https://img.shields.io/badge/Jupyter-v7.5-F37626?logo=jupyter&logoColor=white)
 ![R version](https://img.shields.io/badge/R-4.6.0-276DC3?logo=R&logoColor=white)
 
@@ -31,7 +31,7 @@
 
 ### Requerimentos
 
-- [x] [Python 3.14](https://www.python.org/downloads/release/python-3140/)
+- [x] [Python 3.13](https://www.python.org/downloads/release/python-3130/)
 - [x] [uv](https://docs.astral.sh/uv/)
 
 ### Setup
