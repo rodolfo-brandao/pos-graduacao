@@ -2,7 +2,7 @@
 This is the Streamlit Dashboard entrypoint.
 
 Run (root folder):
-    $ streamlit run modulos/modulo-08/dashboard.py
+    $ streamlit run src/modulo-08/dashboard.py
 """
 
 

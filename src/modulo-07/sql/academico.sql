@@ -1,4 +1,4 @@
--- DDL and DML script used in "modulos/modulo-07"
+-- DDL and DML script used in "src/modulo-07"
 
 
 ALTER SESSION SET CONTAINER = XEPDB1;

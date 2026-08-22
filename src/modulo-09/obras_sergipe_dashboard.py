@@ -2,7 +2,7 @@
 This is the Streamlit Dashboard entrypoint.
 
 [venv] On root folder, run:
-    $ streamlit run modulos/modulo-09/dashboard.py
+    $ streamlit run src/modulo-09/obras_sergipe_dashboard.py
 """
 
 
