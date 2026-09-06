@@ -55,6 +55,8 @@ Marque S (sim), N (não) ou P (parcialmente) para cada item em relação aos tr�
 
 Escreva a comunicação que enviaria ao titular no cenário do parecer, procurando enquadrar os itens do checklist acima. Máximo de 10 linhas com linguagem de pessoa comum: sem jargão técnico e sem juridiquês.
 
+---
+
 >Prezado(a),
 >
 >Sua proposta de crédito foi recusada por uma decisão automatizada, tomada por um sistema de inteligência artificial, com base em critérios como histórico de pagamentos, comprometimento de renda e dados cadastrais informados. Atrasos recentes ou alto endividamento podem ter influenciado o resultado; regularizar pendências e reduzir dívidas pode favorecer novas análises.
