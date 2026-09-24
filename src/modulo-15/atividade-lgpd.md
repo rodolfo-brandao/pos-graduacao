@@ -4,36 +4,36 @@ Referente à LGPD, leia as seguintes devolutivas sobre decisões automatizadas d
 
 ### Texto 1
 
-    Prezado(a) Senhor(a),
-
-    Informamos que a análise da proposta nº 84.221 foi processada por modelo estatístico de avaliação de risco de crédito. O escore final apurado foi de 412 pontos, inferior ao ponto de corte vigente para a modalidade solicitada, que é de 560 pontos. As variáveis de maior contribuição marginal negativa foram, nesta ordem:
-
-    1. Comportamento de utilização de limite rotativo nos últimos 90 dias.
-    2. Quantidade de consultas a bureaus no trimestre.
-    3. Razão entre comprometimento de renda.
-    4. Renda declarada.
-
-    O modelo empregado é do tipo gradient boosting, com recalibração trimestral.
-
-    Atenciosamente, Área de Crédito.
+> Prezado(a) Senhor(a),
+>
+>Informamos que a análise da proposta nº 84.221 foi processada por modelo estatístico de avaliação de risco de crédito. O escore final apurado foi de 412 pontos, inferior ao ponto de corte vigente para a modalidade solicitada, que é de 560 pontos. As variáveis de maior contribuição marginal negativa foram, nesta ordem:
+>
+> 1. Comportamento de utilização de limite rotativo nos últimos 90 dias.
+> 2. Quantidade de consultas a bureaus no trimestre.
+> 3. Razão entre comprometimento de renda.
+> 4. Renda declarada.
+>
+> O modelo empregado é do tipo gradient boosting, com recalibração trimestral.
+>
+> Atenciosamente, Área de Crédito.
 
 ### Texto 2
 
-    Olá!
-
-    Analisamos seu pedido com muito cuidado, mas no momento seu perfil não atende aos critérios internos da nossa política de crédito. Agradecemos seu interesse e esperamos poder atendê-lo em uma próxima oportunidade.
-
-    Equipe de Atendimento.
+> Olá!
+>
+> Analisamos seu pedido com muito cuidado, mas no momento seu perfil não atende aos critérios internos da nossa política de crédito. Agradecemos seu interesse e esperamos poder atendê-lo em uma próxima oportunidade.
+>
+> Equipe de Atendimento.
 
 ### Texto 3
 
-    Prezado(a),
-
-    Sua proposta de crédito foi analisada e não pôde ser aprovada neste momento. A análise considerou seu histórico de pagamentos, seu relacionamento conosco e informações obtidas junto a birôs de crédito. A decisão foi tomada de forma automatizada, com base em critérios objetivos e sem qualquer intervenção humana, o que assegura o tratamento isonômico a todos os proponentes.
-
-    Caso deseje, você pode solicitar a revisão da decisão por meio da nossa central de atendimento. A revisão será realizada pelo mesmo sistema, com os dados atualizados que você fornecer.
-
-    Atenciosamente, Área de Crédito.
+> Prezado(a),
+>
+> Sua proposta de crédito foi analisada e não pôde ser aprovada neste momento. A análise considerou seu histórico de pagamentos, seu relacionamento conosco e informações obtidas junto a birôs de crédito. A decisão foi tomada de forma automatizada, com base em critérios objetivos e sem qualquer intervenção humana, o que assegura o tratamento isonômico a todos os proponentes.
+>
+> Caso deseje, você pode solicitar a revisão da decisão por meio da nossa central de atendimento. A revisão será realizada pelo mesmo sistema, com os dados atualizados que você fornecer.
+>
+> Atenciosamente, Área de Crédito.
 
 ## Checklist de Suficiência da Comunicação
 
@@ -57,13 +57,13 @@ Escreva a comunicação que enviaria ao titular no cenário do parecer, procuran
 
 ---
 
-    Prezado(a),
-
-    Sua proposta de crédito foi recusada por uma decisão automatizada, tomada por um sistema de inteligência artificial, com base em critérios como histórico de pagamentos, comprometimento de renda e dados cadastrais informados. Atrasos recentes ou alto endividamento podem ter influenciado o resultado; regularizar pendências e reduzir dívidas pode favorecer novas análises.
-
-    Nos termos do art. 20 da LGPD, você pode solicitar revisão humana desta decisão pelo canal de atendimento disponível em nosso site, em até 10 dias a partir do recebimento. Por envolver segredo comercial, a lógica interna e os pesos do modelo não podem ser detalhados.
-
-    Atenciosamente, Área de Crédito.
+> Prezado(a),
+>
+> Sua proposta de crédito foi recusada por uma decisão automatizada, tomada por um sistema de inteligência artificial, com base em critérios como histórico de pagamentos, comprometimento de renda e dados cadastrais informados. Atrasos recentes ou alto endividamento podem ter influenciado o resultado; regularizar pendências e reduzir dívidas pode favorecer novas análises.
+>
+> Nos termos do art. 20 da LGPD, você pode solicitar revisão humana desta decisão pelo canal de atendimento disponível em nosso site, em até 10 dias a partir do recebimento. Por envolver segredo comercial, a lógica interna e os pesos do modelo não podem ser detalhados.
+>
+> Atenciosamente, Área de Crédito.
 
 ### Etapa 3
 
@@ -83,10 +83,16 @@ Dados utilizados:
 
 ---
 
-    Prezado(a),
+> Prezado(a),
+>
+> Você foi selecionado(a) para fiscalização por um sistema automatizado que estima o risco de irregularidade fiscal, com base no histórico de autuações dos últimos oito anos, perfil de atividade e consistência declaratória.
+>
+> Regularizar pendências cadastrais ou declaratórias pode reduzir seu risco em análises futuras. Nos termos do art. 20 da LGPD, você pode requerer revisão humana pelo canal de atendimento disponível no site da Secretaria Municipal da Fazenda, em até 15 dias corridos a partir do recebimento. A metodologia do sistema é protegida por sigilo contratual com o fornecedor.
+>
+> Atenciosamente, Equipe de Fiscalização.
 
-    Você foi selecionado(a) para fiscalização por um sistema automatizado que estima o risco de irregularidade fiscal, com base no histórico de autuações dos últimos oito anos, perfil de atividade e consistência declaratória.
+---
 
-    Regularizar pendências cadastrais ou declaratórias pode reduzir seu risco em análises futuras. Nos termos do art. 20 da LGPD, você pode requerer revisão humana pelo canal de atendimento disponível no site da Secretaria Municipal da Fazenda, em até 15 dias corridos a partir do recebimento. A metodologia do sistema é protegida por sigilo contratual com o fornecedor.
+## Oficina em Sala de Aula
 
-    Atenciosamente, Equipe de Fiscalização.
+![Cartolina Estudo de Caso LGPD](assets/img-01.jpeg)
