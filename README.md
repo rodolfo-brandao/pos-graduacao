@@ -24,9 +24,12 @@
 10. [Machine Learning — Teoria](src/modulo-10/) (2026)
 11. [Machine Learning — Teoria e Prática I](src/modulo-11/) (2026)
 12. [Machine Learning — Teoria e Prática II](src/modulo-12/) (2026)
-13. [Deep Learning — Teoria](src/modulo-13/) (2026)
-14. [Deep Learning — Teoria e Prática](src/modulo-14/) (2026)
-15. [Ética na IA](src/modulo-15/) (2026)
+13. [Machine Learning — Prática e Projetos](src/modulo-13/) (2026)
+14. [Deep Learning — Teoria](src/modulo-14/) (2026)
+15. [Deep Learning — Teoria e Prática](src/modulo-15/) (2026)
+16. [Ética na IA](src/modulo-16/) (2026)
+17. [Projeto Final](src/modulo-17/) (2026)
+18. [Trabalho de Conclusão](src/modulo-18/) (2026)
 
 ## Setup Inicial
 
