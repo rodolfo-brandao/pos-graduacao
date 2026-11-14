@@ -2,16 +2,14 @@
 
 ### Professor
 
-Fabio Batista Santos (coordenador)
+Roberto Wagner Santos Maciel (coordenador)
 
-- [Lattes](http://lattes.cnpq.br/4297461515119618)
+- [Lattes](http://lattes.cnpq.br/4233066414967104)
 
 ### Sobre
 
-Possui graduação em Tecnologia em Processamento de Dados pela Universidade Tiradentes (2001) e Especialização em Analise de Sistema com Ênfase em Aplicações Web. MBA em Gestão de Projetos e Mestrado em Ciências da Computação pela Universidade Federal de Pernambuco, MBA em IA e Ciencia de Dados pela PUC - RS.
+Possui graduação em Sistemas de Informação pela Universidade Tiradentes (2005), MBA em Gerenciamento de Projetos pela FANESE (2008), Mestrado em Ciência da Computação na Universidade Federal de Sergipe (2021), Doutorando em Educação pela Universidade Tiradentes (2026-2030). 
 
-Foi professor assistente nível III da Universidade Tiradentes durante 05 anos. Atuou como Gerente de Serviços de TI Brasil do Grupo Cencosud SA e Gerente de Tecnologia na Sabe Alimentos. Atuou como professor com Mestrado na Faculdade Mauricio de Nassau. Coordenador dos Cursos de Computação e Jogos Digitais na Universidade Tiradentes e Coordenador do MBA em Gestão de Projetos na Universidade Tiradentes. Foi Superintendente de Tecnologia da Informação, Inteligência Competitiva e Inovação da Unimed Sergipe.
-
-Atualmente é professor adjunto dos Cursos de Computação da Universidade Tiradentes e Diretor de Tecnologia do Grupo Tiradentes e Coordenador do curso de MBA em Ciência de Dados e Inteligência Artificial na Universidade Tiradentes.
+Gerente de Sistemas e Governança TI da Cencosud Brasil e Professor de Graduação em Sistemas de Informação e de Pós-Graduação em Gerenciamento de Projetos (10 anos). Atuação na área de informática desde 1991 (desde 2005 em Gerenciamento). Gerenciou a implantação de SAP FICO (2008) e SAP Retail (2012) em empresa de Varejo Supermercado e SAP Banking em um dos maiores bancos públicos do país, algumas fases do projeto (2014).
 
 (_texto informado pelo docente_)
