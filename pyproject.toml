@@ -30,3 +30,8 @@ dependencies = [
     "torchvision>=0.27.0",
     "transformers>=5.15.1",
 ]
+
+[dependency-groups]
+dev = [
+    "pylint>=4.1.3",
+]
