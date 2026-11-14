@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+
+\usepackage{sbc-template}
+\usepackage{graphicx,url}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+% \usepackage[hidelinks]{hyperref} % opcional; se usar, sempre por último
+
+\sloppy
+
+\title{Cinematica: Um Grafo de Conhecimento Agêntico\\
+       para Exploração Semântica de Filmes}
+
+\author{Cleiton A. Fraga\inst{1} \and Rodolfo B. de Oliveira\inst{1}}
+
+\address{
+    Universidade Tiradentes (Unit)\\
+    Aracaju -- SE -- Brasil
+    \email{\{cleiton.alves,rodolfo.brandao\}@souunit.com.br}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    Answering complex questions about films---multi-hop relationships, aggregations, or thematic similarity---exceeds what keyword matching or single-hop queries offer. This paper presents Cinematica, an agentic architecture combining a Neo4j knowledge graph built from IMDb/TMDB data with a language model (Claude) that reasons through a bounded, grounded tool-use loop---schema introspection, entity resolution, validated Cypher, and vector search---verified before composing an answer. Preliminary results show reliable answers across multi-hop, analytical, and thematic questions, a challenge for conventional RAG.
+\end{abstract}
+
+\begin{resumo}
+    Responder a perguntas complexas sobre filmes~--- relações multi-hop, agregações ou similaridade temática~--- exige mais do que correspondência por palavras-chave ou consultas de salto único. Este artigo apresenta o Cinematica, uma arquitetura agêntica que combina um grafo de conhecimento em Neo4j, construído a partir de dados do IMDb/TMDB, com um modelo de linguagem (Claude) que raciocina por um laço de ferramentas limitado e fundamentado~--- introspecção de esquema, resolução de entidades, Cypher validado e busca vetorial~--- verificado antes da composição da resposta. Resultados preliminares indicam respostas confiáveis em perguntas multi-hop, analíticas e temáticas, um desafio para RAG convencional.
+\end{resumo}
+
+\section{Introdução}
+\label{sec:introducao}
+    Bases de dados cinematográficas como o IMDb e o TMDB reúnem milhões de registros sobre filmes, pessoas, gêneros, idiomas, países e empresas produtoras. Grande parte do valor desses dados, porém, não está nos registros isolados, mas nas \emph{relações} entre eles: quem dirigiu quem, quais atores colaboraram repetidamente, quais produtoras concentram determinados gêneros ou quais filmes compartilham uma mesma temática. Perguntas que um entusiasta, um pesquisador ou um curador formula naturalmente~--- por exemplo, ``quais atores trabalharam com Denis Villeneuve e também atuaram em ficções científicas produzidas no Reino Unido?'', ``qual diretor tem a maior nota média entre filmes com grande número de votos?'' ou ``que filmes tratam do isolamento em viagens espaciais?''~--- exigem, respectivamente, travessias de múltiplos saltos (\emph{multi-hop}), agregações analíticas e similaridade semântica. Nenhuma dessas operações é bem atendida por busca por palavras-chave ou por consultas de salto único.
+    
+    Grafos de conhecimento oferecem uma representação natural para esse domínio, pois tornam as relações entidades de primeira classe e permitem consultá-las de forma declarativa~\cite{hogan2021knowledge}. Seu uso direto, no entanto, impõe uma barreira: o usuário precisa conhecer o esquema do grafo e uma linguagem de consulta como Cypher. Modelos de linguagem de grande porte (LLMs) surgem como uma interface promissora para reduzir essa barreira, traduzindo perguntas em linguagem natural para consultas estruturadas. Contudo, quando usados de forma isolada, LLMs tendem a produzir respostas plausíveis porém incorretas~--- as chamadas alucinações~\cite{ji2023hallucination}~---, e, ao gerar consultas, frequentemente invertem a direção de relacionamentos, inventam propriedades inexistentes ou não reconhecem quando um resultado vazio indica uma consulta errada.
+
+    A abordagem predominante para fundamentar LLMs em dados externos é a geração aumentada por recuperação (RAG)~\cite{lewis2020rag}, que recupera trechos de texto semanticamente próximos à pergunta e os injeta no contexto do modelo. Embora eficaz para perguntas factuais localizadas, o RAG convencional baseado apenas em similaridade vetorial não captura a estrutura relacional dos dados: não realiza junções entre entidades, não computa agregações sobre o acervo e não garante que todas as restrições de uma pergunta composta sejam satisfeitas. Trabalhos recentes têm explorado a integração entre LLMs e grafos de conhecimento~\cite{pan2024unifying, edge2024graphrag}, bem como agentes que intercalam raciocínio e uso de ferramentas~\cite{yao2023react, schick2023toolformer}, apontando um caminho para superar essas limitações.
+
+    Este artigo apresenta o \textbf{Cinematica}, uma arquitetura agêntica para exploração semântica de filmes que combina um grafo de conhecimento em Neo4j, construído a partir dos dados do IMDb e enriquecido com metadados do TMDB, com um modelo de linguagem de fronteira (Claude) responsável pelo raciocínio. Em vez de gerar uma consulta em uma única tentativa, o modelo opera em um laço de ferramentas limitado e fundamentado no próprio grafo: inspeciona o esquema, resolve menções a pessoas e filmes para nós canônicos por meio de índices de texto completo, escreve e corrige consultas Cypher somente leitura a partir de erros reais de validação e execução, e recorre a busca vetorial sobre sinopses quando a pergunta é temática. Antes de compor a resposta, um estágio de verificação --- que combina uma regra determinística contra resultados vazios com uma avaliação pelo modelo das restrições da pergunta --- decide se os resultados obtidos de fato a respondem, retornando à etapa de consulta quando necessário.
+
+    As principais contribuições deste trabalho são:
+    \begin{itemize}
+    \item A modelagem de um grafo de conhecimento cinematográfico no qual gêneros, idiomas, países, produtoras, palavras-chave e coleções são nós de primeira classe, tornando suas relações diretamente percorríveis, e complementado por índices de texto completo e por um índice vetorial de sinopses;
+    \item Uma arquitetura agêntica em estágios --- planejamento, resolução de entidades, consulta, verificação e composição --- na qual as ferramentas de fundamentação, e não apenas o modelo, sustentam a corretude das respostas;
+    \item Uma avaliação preliminar sobre perguntas \emph{multi-hop}, analíticas e temáticas, categorias que representam um desafio para abordagens de RAG convencional.
+    \end{itemize}
+
+    O restante deste artigo está organizado da seguinte forma: a Seção~\ref{sec:trabalhos} discute trabalhos relacionados. A Seção~\ref{sec:metodologia} descreve a metodologia adotada: a coleta e integração dos dados, a modelagem do grafo de conhecimento, a arquitetura agêntica e o protocolo de avaliação. A Seção~\ref{sec:resultados} apresenta e discute os resultados preliminares. Por fim, a Seção~\ref{sec:conclusao} traz as considerações finais e os trabalhos futuros.
+
+\section{Trabalhos}
+\label{sec:trabalhos}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+
+\section{Metodologia}
+\label{sec:metodologia}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+
+\section{Resultados}
+\label{sec:resultados}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+
+\section{Conclusão}
+\label{sec:conclusao}
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets. It has survived not only many decades, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised thanks to these sheets and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word including versions of Lorem Ipsum.
+
+\bibliographystyle{sbc}
+\bibliography{references}
+
+\end{document}
